@@ -878,7 +878,7 @@ class Stimulator:
     def _calc_electrode_number(list_channels: list, enable_low_frequency: bool = False) -> int:
         """
         When enable_low_frequency = False :
-        Calculates the number corresponding to which electrode is activated.
+        Calculates the number corresponding to which electrodes are activated.
         During the initialisation, the computer needs to tell the Rehastim which channel needs to be activated. It is
         done through the addition of 2 pow the number of the channel.
         For example if the channel 1 and 4 needs to be activated, electrode_number = 2**1 + 2**4
@@ -913,7 +913,7 @@ class Stimulator:
                      inter_pulse_interval: int = None,
                      low_frequency_factor: int = None):
         """
-        Initialize the requested channel.
+        Initialize the requested channels.
         Can update stimulation interval if one is given.
         Can update list_channels if one is iven.
 
@@ -962,7 +962,7 @@ class Stimulator:
     def start_stimulation(self, stimulation_duration: float = None, upd_list_channels: list = None):
         """
         Update a stimulation.
-        Warning: only the channel that has been initiated can be updated.
+        Warning: only the channels that have been initialized can be updated.
 
         Parameters
         ----------
