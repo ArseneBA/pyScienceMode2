@@ -914,8 +914,7 @@ class Stimulator:
                      low_frequency_factor: int = None):
         """
         Initialize the requested channels.
-        Can update stimulation interval if one is given.
-        Can update list_channels if one is iven.
+        Can update stimulation interval, list_channels, inter_pulse_interval or low_frequency_factor if one is given.
 
         stimulation_interval: int
             Period of the main stimulation. [8,1025] ms.
